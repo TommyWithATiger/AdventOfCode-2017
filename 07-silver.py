@@ -1,0 +1,1 @@
+locals().update({'u':list(map(str.strip,__import__("sys").stdin.readlines()))})or print(list(set(q.split(" ")[0]for q in u)-set(q for k in u for q in([]if "->" not in k else list(k.split("-> ")[1].split(", ")))))[0])
