@@ -1,0 +1,1 @@
+print((lambda a,b:lambda x:a(a,b,x))(lambda a,b,x,i=0,u=1,v=0:x[i]=="}"and(i+1,v+u)or x[i]=="{"and a(a,b,x,i+a(a,b,x[i+1:],0,u+1,0)[0]+1,u,v+a(a,b,x[i+1:],0,u+1,0)[1])or x[i]=="!"and a(a,b,x,i+2,u,v)or x[i]=="<"and a(a,b,x,i+b(b,x[i+1:])+1,u,v)or a(a,b,x,i+1,u,v),lambda b,x,i=0:x[i]==">"and i+1 or x[i]=="!"and b(b,x,i+2)or b(b,x,i+1))(__import__("sys").stdin.readline()[1:])[1])
