@@ -1,0 +1,1 @@
+print((lambda a:lambda x:a(a,x,list(range(256))))(lambda a,x,q,s=0,i=0,k={}:x and(k.update({'p':q[i:]+q[:i]})or k.update({'p':k['p'][:x[0]][::-1]+k['p'][x[0]:]})or a(a,x[1:],k['p'][-i:]+k['p'][:-i],s+1,(i+s+x[0])%256))or q[0]*q[1])([*map(int,__import__("sys").stdin.readline().split(","))]))
