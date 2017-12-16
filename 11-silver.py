@@ -1,0 +1,1 @@
+__import__("sys").setrecursionlimit(100000)or print((lambda a:lambda x:a(a,x))(lambda a,k,x=0,y=0,z=0:k and a(a,k[1:],x+{"n":0,"s":0,"ne":1,"se":1,"nw":-1,"sw":-1}[k[0]],y+{"n":1,"s":-1,"ne":0,"se":-1,"nw":1,"sw":0}[k[0]],z+{"n":-1,"s":1,"ne":-1,"se":0,"nw":0,"sw":1}[k[0]])or max([abs(x),abs(y),abs(z)]))(__import__("sys").stdin.readline().strip().split(",")))
